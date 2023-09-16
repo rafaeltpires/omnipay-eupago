@@ -1,0 +1,52 @@
+{
+  "name": "rafaeltpires/omnipay-eupago",
+  "type": "library",
+  "description": "EuPago driver for the Omnipay Multi-Gateway payment processing library",
+  "keywords": [
+    "gateway",
+    "merchant",
+    "EuPago",
+    "omnipay",
+    "pay",
+    "payment",
+    "mbway",
+    "multibanco"
+  ],
+  "homepage": "https://github.com/rafaelpires/omnipay-eupago",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rafael Pires",
+      "email": "me@rafaeltpires.dev"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Omnipay\\EuPago\\" : "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Omnipay\\EuPago\\Test\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "omnipay/common": "^3.2"
+  },
+  "require-dev": {
+    "omnipay/tests": "^4.1",
+    "roave/security-advisories": "dev-latest"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  },
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": false
+    }
+  }
+}

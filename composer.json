@@ -1,0 +1,31 @@
+{
+    "name": "rafaeltpires/omnipay-eupago",
+    "description": "EuPago driver for Omnipay payment processing library",
+    "type": "library",
+    "require": {
+        "omnipay/common": "^3.2",
+        "symfony/http-client": "^6.3",
+        "php-http/httplug": "^2.4",
+        "nyholm/psr7": "^1.8"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\EuPago\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rafaeltpires",
+            "email": "me@rafaeltpires.dev"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}
